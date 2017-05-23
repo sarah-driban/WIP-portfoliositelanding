@@ -1,0 +1,56 @@
+
+$gold: #F6BD18;
+$yellow: #F2CD16;
+//$yellow: #FFDC11;
+$lime: #B8BD35;
+$peach: #F48875;
+$pink: #B1245A;
+$grey: #C1B8AE;
+$white: #FFF;
+$charcoal: #545251;
+
+$arvo: 'Arvo', serif;
+$roboto: 'Roboto Slab', serif;
+$oswald: 'Oswald', sans-serif;
+
+
+@mixin transition($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -ms-transition: $time;
+  transition: $time;
+}
+
+@mixin radius($size) {
+  border-radius: $size;
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+  -ms-border-radius: $size;
+}
+
+@mixin respond-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+
+// RESPONSIVE SCREEN SIZES //
+
+$maxWidth: 1440px;
+$desktopLarge: 1400px;
+$gridBreak: 1260px;
+$desktop: 1200px;
+$desktopSmall: 1024px;
+$desktopXSmall: 950px; //950 - ipad
+$ipad: 785px; //just for ipad
+$tablet: 768px;
+$mobile: 500px;
+$iPhone6: 380px; //iphone6
+$mobileSmall: 320px;
